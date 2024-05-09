@@ -1,0 +1,64 @@
+.navbar-container {
+    padding: var(--spacing-medium) 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    filter: invert(17%) sepia(85%) saturate(4202%) hue-rotate(251deg) brightness(73%) contrast(147%);
+    width: 160px;
+}
+
+.navbar-menu {
+    display: flex;
+    list-style: none;
+    gap: var(--spacing-large);
+    color: var(--main-color);
+    font-size: 20px;
+}
+
+.navbar-container .active-page {
+    padding-bottom: 2px;
+    border-bottom: 2px solid var(--main-color);
+}
+
+.navbar-container li {
+    cursor: pointer;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.navbar-search-icon {
+    position: relative;
+}
+
+.navbar-search-icon .dot {
+    position: absolute;
+    min-height: 10px;
+    min-width: 10px;
+    background-color: var(--main-color);
+    border-radius: 50%;
+    top: -8px;
+    right: -8px;
+}
+
+.signup-button {
+    background: transparent;
+    font-size: var(--spacing-medium);
+    color: var(--main-color);
+    cursor: pointer;
+    border: 1px solid var(--main-color);
+    padding: var(--spacing) var(--spacing-large);
+    border-radius: 60px;
+    transition: .2s;
+}
+
+.signup-button:hover {
+    background: var(--main-color);
+    color: var(--light-color);
+}
