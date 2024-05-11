@@ -1,0 +1,17 @@
+.food-list-container {
+    margin-top: var(--spacing-large);
+}
+
+.food-list-container h2 {
+    font-size: max(1.6vw, 24px);
+    font-weight: 600;
+    color: var(--outremer);
+}
+
+.food-list-contents {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    margin-top: var(--spacing-large);
+    gap: var(--spacing-large);
+    row-gap: 48px;
+}
