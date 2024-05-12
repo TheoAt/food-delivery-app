@@ -1,16 +1,20 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import './Navbar.css'
 
 import { assets } from '../../assets/assets'
-import { Link }  from 'react-router-dom'
+import { Link } from 'react-router-dom'
+import { StoreContext } from '../../context/StoreContext'
 
 const Navbar = ({ setShowLogin }) => {
 
     const [currentPage, setCurrentPage] = useState('home')
+    const {getTotalCartAmount} = useContext(StoreContext)
 
     return (
         <div className='navbar-container'>
-            <img className="logo" src={assets.logo} alt="logo_img" />
+            <Link to='/'>
+                <img className="logo" src={assets.logo} alt="logo_img" />
+            </Link>
 
             <ul className="navbar-menu">
                 <Link to='/' onClick={() => { setCurrentPage('home') }} className={currentPage === 'home' ? 'active-page' : ''}> Accueil</Link>
@@ -23,8 +27,10 @@ const Navbar = ({ setShowLogin }) => {
                 <img src={assets.search_icon} alt="search_icon" />
 
                 <div className="navbar-search-icon">
-                    <img src={assets.basket_icon} alt="basket_icon" />
-                    <div className="dot"></div>
+                    <Link to='/panier'>
+                        <img src={assets.basket_icon} alt="basket_icon" />
+                    </Link>
+                    <div className={getTotalCartAmount() === 0 ? '' : 'dot'}></div>
                 </div>
 
                 <button onClick={() => setShowLogin(true)} className='signup-button'>Se connecter</button>
