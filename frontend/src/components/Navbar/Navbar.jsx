@@ -12,10 +12,10 @@ const Navbar = () => {
             <img className="logo" src={assets.logo} alt="logo_img" />
 
             <ul className="navbar-menu">
-                <li onClick={() => { setCurrentPage('home') }} className={currentPage === 'home' ? 'active-page' : ''}>Accueil</li>
-                <li onClick={() => { setCurrentPage('menu') }} className={currentPage === 'menu' ? 'active-page' : ''}>Menu</li>
-                <li onClick={() => { setCurrentPage('app') }} className={currentPage === 'app' ? 'active-page' : ''}>Application</li>
-                <li onClick={() => { setCurrentPage('contact') }} className={currentPage === 'contact' ? 'active-page' : ''}>Contact</li>
+                <li onClick={() => { setCurrentPage('home') }} className={currentPage === 'home' ? 'active-page' : ''}> <a href="#home">Accueil</a></li>
+                <li onClick={() => { setCurrentPage('menu') }} className={currentPage === 'menu' ? 'active-page' : ''}><a href='#menu'>Menu</a></li>
+                <li onClick={() => { setCurrentPage('app') }} className={currentPage === 'app' ? 'active-page' : ''}><a href='#app-download'>Application</a></li>
+                <li onClick={() => { setCurrentPage('contact') }} className={currentPage === 'contact' ? 'active-page' : ''}><a href='#footer'>Contact</a></li>
             </ul>
 
             <div className="navbar-right">
