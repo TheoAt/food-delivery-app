@@ -51,3 +51,20 @@
     background-color: var(--light-color);
     border: none;
 }
+
+@media screen and (max-width: 768px) {
+    .footer-content {
+        display: flex;
+        flex-direction: column;
+        gap: 36px;
+    }
+
+    .footer-content-left p{
+        font-size: 14px;
+        margin: var(--spacing-medium) 0;
+    }
+
+    .footer-copyright {
+        text-align: center;
+    }
+}
