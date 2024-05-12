@@ -1,0 +1,127 @@
+.cart-container {
+    margin-top: 100px;
+}
+
+.cart-items-title {
+    display: grid;
+    grid-template-columns: 1fr 1.6fr 1fr 1fr 1fr .6fr;
+    align-items: center;
+    color: var(--main-color);
+    font-size: max(1vw, 12px);
+}
+
+.cart-items-item {
+    margin: var(--spacing-medium) 0;
+    color: var(--outremer);
+}
+
+.cart-items-item img {
+    width: 52px;
+}
+
+.cross {
+    cursor: pointer;
+}
+
+.cart-container hr {
+    height: 1px;
+    border: none;
+    background-color: #05090a40;
+}
+
+.hr-items-title {
+    background-color: var(--dark-color) !important;
+}
+
+.cart-bottom {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    gap: max(12vw, 20px);
+}
+
+.cart-total {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cart-total-details {
+    display: flex;
+    justify-content: space-between;
+    color: var(--outremer)
+}
+
+.cart-total hr {
+    margin: var(--spacing) 0;
+}
+
+.cart-total button {
+    border: 1px solid var(--outremer);
+    color: var(--light-color);
+    background-color: var(--outremer);
+    width: max(16vw, 200px);
+    padding: 12px 0;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: .2s;
+    font-weight: 500;
+}
+
+.cart-total button:hover {
+    background-color: var(--light-color);
+    color: var(--outremer);
+    border: 1px solid var(--outremer);
+}
+
+.cart-promocode {
+    flex: 1;
+}
+
+.cart-promocode p {
+    color: var(--main-color);
+}
+
+.cart-promocode-input {
+    margin-top: var(--spacing);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #eaeaea;
+    border-radius: 4px;
+}
+
+.cart-promocode-input input {
+    background: transparent;
+    border: none;
+    outline: none;
+    padding-left: var(--spacing-medium);
+    color: var(--dark-color);
+}
+
+.cart-promocode-input button {
+    width: max(10vw, 140px);
+    padding: 12px 4px;
+    background-color: var(--dark-color);
+    border: none;
+    color: var(--light-color);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .cart-bottom {
+        flex-direction: column-reverse;
+    }
+
+    .cart-promocode {
+        justify-content: start;
+        width: 80%;
+    }
+
+    .cart-promocode-input button {
+        margin-left: -40px;
+        padding: 12px 24px;
+    }
+}
