@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './App.css'
 
 //Import components
@@ -12,12 +12,21 @@ import Home from './pages/Home/Home'
 import Cart from './pages/Cart/Cart'
 import PlaceOrder from './pages/PlaceOrder/PlaceOrder'
 import Footer from './components/Footer/Footer'
+import Login from './components/Login/Login'
 
 const App = () => {
+
+  const [showLogin, setShowLogin] = useState(false)
+
   return (
     <>
+      {showLogin ?
+          <Login setShowLogin={setShowLogin} />
+          :
+          null
+      }
       <div className='app-container'>
-        <Navbar />
+        <Navbar setShowLogin={setShowLogin} />
 
         <Routes>
           <Route path='' element={<Home />} />

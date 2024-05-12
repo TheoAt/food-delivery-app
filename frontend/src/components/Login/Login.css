@@ -1,0 +1,75 @@
+.login-container {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    background-color: #05090a90;
+}
+
+.login-form {
+    place-self: center;
+    width: max(20vw, 320px);
+    color: var(--main-color);
+    background-color: var(--light-color);
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 24px 32px;
+    border-radius: var(--spacing);
+    font-size: 14px;
+    animation: fadeIn .4s;
+}
+
+.login-form-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--main-color);
+}
+
+.login-form-title img {
+    width: var(--spacing-medium);
+    cursor: pointer;
+}
+
+.login-form-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.login-form-inputs input {
+    outline: none;
+    border: 1px solid var(--outremer);
+    padding: var(--spacing);
+    color: var(--outremer);
+}
+
+.login-container button {
+    border: none;
+    padding: var(--spacing);
+    border-radius: 4px;
+    color: var(--light-color);
+    background-color: var(--outremer);
+    font-size: var(--spacing-medium);
+    cursor: pointer;
+    margin-bottom: var(--spacing);
+}
+
+.login-form-condition {
+    display: flex;
+    align-items: start;
+    gap: var(--spacing);
+    margin-top: -16px;
+}
+
+.login-form-condition input {
+    margin-top: 4px;
+}
+
+.login-form p span {
+    color: var(--main-color);
+    font-weight: 500;
+    cursor: pointer;
+}

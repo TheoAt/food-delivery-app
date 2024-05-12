@@ -4,7 +4,7 @@ import './Navbar.css'
 import { assets } from '../../assets/assets'
 import { Link }  from 'react-router-dom'
 
-const Navbar = () => {
+const Navbar = ({ setShowLogin }) => {
 
     const [currentPage, setCurrentPage] = useState('home')
 
@@ -27,7 +27,7 @@ const Navbar = () => {
                     <div className="dot"></div>
                 </div>
 
-                <button className='signup-button'>Se connecter</button>
+                <button onClick={() => setShowLogin(true)} className='signup-button'>Se connecter</button>
             </div>
         </div>
     )
