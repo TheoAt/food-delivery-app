@@ -55,3 +55,15 @@
     border: none;
     background-color: var(--outremer);
 }
+
+@media screen and (max-width: 1050px) {
+    .menu-desc {
+        max-width: 100% !important;
+        font-size: 14px;
+        text-align: justify;
+    }
+
+    .menu-container h1 {
+        font-size: 24px;
+    }
+}
