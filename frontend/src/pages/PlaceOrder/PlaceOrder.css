@@ -1,0 +1,69 @@
+.place-order-container {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    gap: 48px;
+    margin-top: 80px;
+}
+
+.place-order-left {
+    width: 100%;
+    max-width: max(32%, 500px);
+}
+
+.place-order-left .title {
+    font-size: var(--spacing-large);
+    font-weight: 600;
+    margin-bottom: var(--spacing-large);
+    color: var(--main-color);
+}
+
+.place-order-left input {
+    margin-bottom: var(--spacing-medium);
+    width: 100%;
+    padding: var(--spacing);
+    border: 1px solid #c5c5c5;
+    border-radius: 4px;
+    outline-color: var(--outremer);
+    color: var(--dark-color);
+}
+
+.place-order-left .input-lrg {
+    width: 96%;
+}
+
+.place-order-left .multi-fields {
+    display: flex;
+    gap: var(--spacing);
+}
+
+.place-order-right {
+    width: 100%;
+    max-width: max(40%, 500px);
+}
+
+.place-order-container .cart-total .btn-pay {
+    margin-top: var(--spacing-large);
+}
+
+.empty-container h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40.5vh;
+    color: var(--main-color);
+    font-size: max(1.6vw, 20px);
+}
+
+@media screen and (max-width:768px) {
+    .place-order-container {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:424px) {
+    .place-order-left .input-lrg {
+        width: 94%;
+    }
+}

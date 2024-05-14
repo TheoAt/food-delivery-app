@@ -110,6 +110,12 @@
     cursor: pointer;
 }
 
+.cart-empty {
+    color: var(--main-color);
+    margin-top: var(--spacing-medium);
+    font-weight: 500;
+}
+
 @media screen and (max-width: 768px) {
     .cart-bottom {
         flex-direction: column-reverse;
@@ -123,5 +129,17 @@
     .cart-promocode-input button {
         margin-left: -40px;
         padding: 12px 24px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .cart-items-title {
+        grid-template-columns: .8fr 1.2fr .8fr .8fr .8fr .4fr;
+        text-align: center;
+        font-size: 10px;
+    }
+
+    .cart-promocode-input button {
+        margin-left: -72px;
     }
 }
