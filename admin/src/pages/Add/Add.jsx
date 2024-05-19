@@ -33,11 +33,12 @@ const Add = ({ url }) => {
 
         const response = await axios.post(`${url}/api/food/add`, formData)
         if (response.data.success) {
+            console.log(data)
             setData({
                 name: '',
                 description: '',
                 price: '',
-                category: 'Salades'
+                category: data.category
             })
             setImage(false)
             toast.success(response.data.message)
