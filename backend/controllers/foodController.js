@@ -15,10 +15,10 @@ const addFood = async (req, res) => {
 
     try {
         await food.save()
-        res.json({ success: true, message: "Food added" })
+        res.json({ success: true, message: "Votre plat a été ajouté !" })
     } catch (error) {
         console.log(error)
-        res.json({ success: false, message: "Error saving" })
+        res.json({ success: false, message: "Une erreur est survenue" })
     }
 }
 
@@ -29,7 +29,7 @@ const listFood = async (req, res) => {
         res.json({ success: true, data: foods })
     } catch (error) {
         console.log(error)
-        res.json({ success: false, message: "Error getting food" })
+        res.json({ success: false, message: "Une erreur est survenue" })
     }
 }
 
@@ -40,10 +40,10 @@ const removeFood = async (req, res) => {
         fs.unlink(`uploads/${food.image}`, () => { })
 
         await foodModel.findByIdAndDelete(req.body.id)
-        res.json({ success: true, message: "Food removed" })
+        res.json({ success: true, message: "Votre plat a été retiré !" })
     } catch (error) {
         console.log(error)
-        res.json({ success: false, message: "Error removing food" })
+        res.json({ success: false, message: "Une erreur est survenue" })
     }
 }
 
