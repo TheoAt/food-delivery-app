@@ -1,0 +1,32 @@
+.list-table {
+    margin-bottom: 48px;
+}
+
+.list-table-format {
+    display: grid;
+    grid-template-columns: .6fr 2fr 1fr 1fr .4fr;
+    align-items: center;
+    gap: var(--spacing);
+    padding: 12px var(--spacing-medium);
+    border: 1px solid #cacaca;
+    font-size: 14px;
+}
+
+.list-table-format.title {
+    background-color: #f9f9f9;
+}
+
+.list-table-format img {
+    width: 52px;
+}
+
+@media screen and (max-width: 768px) {
+    .list-table-format {
+        grid-template-columns: 1fr 3fr 1fr;
+        gap: var(--spacing-medium);
+    }
+
+    .list-table-format.title {
+        display: none;
+    }
+}
