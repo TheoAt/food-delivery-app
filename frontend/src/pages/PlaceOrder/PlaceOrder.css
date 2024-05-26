@@ -56,6 +56,10 @@
     font-size: max(1.6vw, 20px);
 }
 
+.place-order-container .input-postal {
+    width: 40%;
+}
+
 @media screen and (max-width:768px) {
     .place-order-container {
         flex-direction: column;

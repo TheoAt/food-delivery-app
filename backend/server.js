@@ -11,7 +11,7 @@ import 'dotenv/config.js'
 
 //App configuration
 const app = express()
-const port = 4000
+const port = 4001
 
 //Middleware
 app.use(express.json())
