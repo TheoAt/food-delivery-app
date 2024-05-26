@@ -52,21 +52,21 @@ const Cart = () => {
                     <div>
                         <div className="cart-total-details">
                             <p>Sous-total</p>
-                            <p>{getTotalCartAmount()}€</p>
+                            <p>{getTotalCartAmount().toFixed(2)}€</p>
                         </div>
 
                         <hr />
 
                         <div className="cart-total-details">
                             <p>Frais de livraison/service</p>
-                            <p>{getTotalCartAmount() === 0 ? '0' : '4.99'}€</p>
+                            <p>{getTotalCartAmount() === 0 ? '0' : '5.00'}€</p>
                         </div>
 
                         <hr />
 
                         <div className="cart-total-details">
                             <b>Montant total</b>
-                            <b>{getTotalCartAmount() === 0 ? '0' : (getTotalCartAmount() + 4.99).toFixed(2)}€</b>
+                            <b>{getTotalCartAmount() === 0 ? '0' : (getTotalCartAmount() + 5).toFixed(2)}€</b>
                         </div>
                     </div>
 

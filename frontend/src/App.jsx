@@ -13,6 +13,7 @@ import Cart from './pages/Cart/Cart'
 import PlaceOrder from './pages/PlaceOrder/PlaceOrder'
 import Footer from './components/Footer/Footer'
 import Login from './components/Login/Login'
+import Verify from './pages/Verify/Verify'
 
 const App = () => {
 
@@ -21,9 +22,9 @@ const App = () => {
   return (
     <>
       {showLogin ?
-          <Login setShowLogin={setShowLogin} />
-          :
-          null
+        <Login setShowLogin={setShowLogin} />
+        :
+        null
       }
       <div className='app-container'>
         <Navbar setShowLogin={setShowLogin} />
@@ -32,6 +33,7 @@ const App = () => {
           <Route path='' element={<Home />} />
           <Route path='/panier' element={<Cart />} />
           <Route path='/commande' element={<PlaceOrder />} />
+          <Route path='/verify' element={<Verify />} />
         </Routes>
       </div>
 
