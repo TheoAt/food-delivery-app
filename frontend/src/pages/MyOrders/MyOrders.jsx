@@ -43,7 +43,7 @@ const MyOrders = () => {
                             <p>{(order.amount).toFixed(2)}€</p>
                             <p>{order.items.length === 1 ? 'Plat : ' : 'Plats : '}{order.items.length}</p>
                             <p><span>&#x25cf;</span> <b>{order.status}</b></p>
-                            <button>Suivre ma commande</button>
+                            <button onClick={fetchOrders}>Suivre ma commande</button>
                         </div>
                     )
                 })}
