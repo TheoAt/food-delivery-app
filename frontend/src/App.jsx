@@ -14,6 +14,7 @@ import PlaceOrder from './pages/PlaceOrder/PlaceOrder'
 import Footer from './components/Footer/Footer'
 import Login from './components/Login/Login'
 import Verify from './pages/Verify/Verify'
+import MyOrders from './pages/MyOrders/MyOrders'
 
 const App = () => {
 
@@ -34,6 +35,7 @@ const App = () => {
           <Route path='/panier' element={<Cart />} />
           <Route path='/commande' element={<PlaceOrder />} />
           <Route path='/verify' element={<Verify />} />
+          <Route path='/mescommandes' element={<MyOrders />} />
         </Routes>
       </div>
 
