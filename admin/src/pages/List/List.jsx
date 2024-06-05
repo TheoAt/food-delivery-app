@@ -37,7 +37,7 @@ const List = ({ url }) => {
         <div className='list-container add-container flex-col'>
             {list.length !== 0 ?
                 <>
-                    <p>Liste de vos plats</p>
+                    <h3>Liste de vos plats</h3>
 
                     <div className="list-table">
                         <div className="list-table-format title">
