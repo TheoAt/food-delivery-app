@@ -6,7 +6,6 @@
 }
 
 .navbar-container .logo {
-    filter: invert(13%) sepia(87%) saturate(5582%) hue-rotate(255deg) brightness(75%) contrast(138%);
     width: max(10%, 80px);
 }
 

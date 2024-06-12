@@ -18,7 +18,7 @@
 }
 
 .footer-logo {
-    filter: invert(13%) sepia(87%) saturate(5582%) hue-rotate(255deg) brightness(75%) contrast(138%);
+    width: 300px;
 }
 
 .footer-content-left,
@@ -59,7 +59,7 @@
         gap: 36px;
     }
 
-    .footer-content-left p{
+    .footer-content-left p {
         font-size: 14px;
         margin: var(--spacing-medium) 0;
     }
